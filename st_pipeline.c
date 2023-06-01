@@ -5,7 +5,6 @@
 #include <time.h>
 #include <unistd.h>
 #include "activeobject.h"
-#include <stdint.h>
 
 // PART A:
 int isPrime(unsigned int number)
@@ -81,7 +80,7 @@ void fourth(void * arg)
 
 int main(int argc, char *argv[])
 {
-    if (argc < 2)
+    if (argc < 2 || argc >3)
     {
         perror("need more elements\n");
         return 1;
